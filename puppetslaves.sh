@@ -2,13 +2,13 @@ sudo apt-get update
 
 sudo apt-get install -y puppet git
 
-git clone https://github.com/marrkus/Puppetslaves.git
+git clone https://github.com/marrkus/puppetslaves.git
 
-sudo cp -r Puppetslaves /etc/puppet/modules/
+sudo cp -r puppetslaves /etc/puppet/modules/
 
 cd /etc/puppet/
 
-sudo puppet apply --modulepath modules/ -e 'class {"Puppetslaves":}'
+sudo puppet apply --modulepath modules/ -e 'class {"puppetslaves":}'
 
 sudo puppet agent --enable
 
