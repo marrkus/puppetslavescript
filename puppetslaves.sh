@@ -8,7 +8,7 @@ sudo cp -r Puppetslaves /etc/puppet/modules/
 
 cd /etc/puppet/
 
-sudo puppet apply --modulepath modules/ -e 'class {"puppetslaves":}'
+sudo puppet apply --modulepath modules/ -e 'class {"Puppetslaves":}'
 
 sudo puppet agent --enable
 
